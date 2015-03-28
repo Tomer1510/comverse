@@ -1,0 +1,417 @@
+html {
+ min-width: 925px;   
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, p, span {
+    font-weight: normal;
+    color: white;
+}
+
+section-title, section-body, section-footer {
+    text-align: left;
+    display: inline-block;
+    
+}
+
+section {
+    text-align: center;
+}
+
+section > contents {
+    display: inline-block;
+    max-width: 900px;
+    text-align: left;
+    padding: 20px;
+}
+
+
+header > section > ul.menu {
+    text-transform: uppercase;
+
+}
+
+header > section > ul.menu a {
+    color: #585952;
+    
+}
+
+header > section > ul.menu {
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+    vertical-align: bottom;
+}
+
+header > section > ul.menu > li {
+    display: inline;
+    padding: 0 15px;
+    vertical-align: bottom;
+}
+
+header {
+    vertical-align: bottom;
+    padding: 15px 5px;
+    text-align: center;
+    -webkit-box-shadow: 0px 2px 16px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 16px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 16px -3px rgba(0,0,0,0.75);
+}
+
+header > section > img {
+    vertical-align: bottom;
+}
+
+html {
+    text-align: center;
+}
+
+
+
+middle > section:nth-child(1) {
+    
+    background-image: url("../img/slide-bg-complexity.jpg");
+    background-size: auto auto;
+    background-repeat: no-repeat;
+}
+
+
+button {
+    background-color: #0095C5;
+    color: white;
+    padding: 10px 50px 8px 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 7px;
+}
+
+
+content-box {
+    color: white;
+    font-size: 20px;
+    width: 29%;
+    display: inline-block;
+    opacity: 0.8;
+    padding: 0px 1% 15px 1%;
+    margin: 0 1%;
+    border-radius: 5px;
+    text-align: left;
+}
+
+content-box > a {
+    color: white;
+    font-size: 14px;
+}
+
+content-box:nth-child(1) {
+    margin-left: 0;
+    background: #FB368F;
+}
+
+content-box:nth-child(2) {
+    background: #5DC14D;
+}
+
+content-box:nth-child(3) {
+    background: #FF702C;
+}
+
+section#boxes {
+    margin-top: 50px;
+    
+}
+
+middle > section:nth-child(2) {
+    background: rgb(0,160,195); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(0,160,195,1) 0%, rgba(45,185,211,1) 50%, rgba(0,160,195,1) 95%, rgba(0,160,195,1) 97%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,160,195,1)), color-stop(50%,rgba(45,185,211,1)), color-stop(95%,rgba(0,160,195,1)), color-stop(97%,rgba(0,160,195,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,160,195,1) 0%,rgba(45,185,211,1) 50%,rgba(0,160,195,1) 95%,rgba(0,160,195,1) 97%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,160,195,1) 0%,rgba(45,185,211,1) 50%,rgba(0,160,195,1) 95%,rgba(0,160,195,1) 97%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,160,195,1) 0%,rgba(45,185,211,1) 50%,rgba(0,160,195,1) 95%,rgba(0,160,195,1) 97%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,160,195,1) 0%,rgba(45,185,211,1) 50%,rgba(0,160,195,1) 95%,rgba(0,160,195,1) 97%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a0c3', endColorstr='#00a0c3',GradientType=0 ); /* IE6-9 */
+      
+}
+
+
+solutions > solution {
+    display: inline-block;
+    width: 14%;
+    
+    color: white;
+    text-align: center;
+    margin: 0 1% 0 1%;
+    
+}
+
+
+middle > section:nth-child(3) {
+
+    background-image: url("../img/news-and-events-bg.jpg");
+    background-size: auto auto;
+    background-repeat: no-repeat;
+}
+
+middle > section:nth-child(3) > contents > section-body > block {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5% 0 1.5%;
+    
+    
+}
+
+
+middle > section:nth-child(3) > contents > section-body > block > description {
+    background: white;
+    opacity: 0.8;
+    color: black;
+    float: left;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+middle > section:nth-child(3) description > img {
+    float: left;   
+    margin-right: 10px;
+}
+
+
+middle > section:nth-child(3) block-footer {
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+    margin: 10px 5px 5px 0;
+}
+
+
+middle > section:nth-child(4) {
+ background: #ECECEC;  
+    
+}
+
+middle > section:nth-child(4) > contents > section-title > h1 {
+ color: #565656;   
+}
+
+middle > section:nth-child(4) column {
+    width: 31%;
+    margin: 0 1% 0 1%;
+    display: inline-block;
+    vertical-align: bottom;
+    
+}
+
+middle > section:nth-child(4) column > block {
+    display: inline-block;
+    padding: 15px 1% 2% 2%;
+    background: white;
+    color: #565656;   
+}
+
+middle > section:nth-child(4) column > block a {
+    color: #00AFDA;
+    font-size: 14px;
+}
+
+
+middle > section:nth-child(4) column > block img:first-child {
+    float: left; 
+    margin-right: 10px;
+}
+
+quote {
+    background-image: url("/img/quote-grey.png");   
+    display: inline-block;
+    width: 27px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0 5px 0 0px;
+}
+
+middle > section:nth-child(4) column > block span {
+    color: #565656;
+    font-size: 14px;
+}
+
+logos > company.col-3 {
+    width: 31.2%;
+    float: left;
+    display: inline-block;
+    height: 100px;
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 1%;
+    margin-right: 1%;
+    background: white;
+}
+
+
+logos:last-child > company.col-3 {
+    margin-bottom: 0;
+}
+
+logos:first-child > company.col-3 {
+    margin-top: 0;
+}
+
+
+logos > company.col-2 {
+    width: 48%;
+    float: left;
+    display: inline-block;
+    height: 100px;
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 1%;
+    margin-right: 1%;
+    background: white;
+}
+company.col-3 {
+    float: left;
+    display: inline-block;
+}
+
+
+
+logos:last-child > company.col-2 {
+    margin-bottom: 0;
+}
+
+logos:first-child > company.col-2 {
+    margin-top: 0;
+}
+
+
+footer {
+    background-color: #292928;
+    color: white;
+}
+
+footer > section#menus {
+    display: inline-block;
+    width: 70%;
+    max-width: 700px;
+    vertical-align: top;
+}
+
+footer > section#menus > menu > menu-title {
+    font-size: 17px;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+footer > section#menus > menu {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+footer > section#menus > menu > ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+    vertical-align: top;
+}
+
+footer > section#menus > menu > ul > li {
+    font-size: 13px;
+}
+
+footer > section#menus > menu > ul > li > a{
+    color: white !important;
+}
+
+footer > section#latest-posts {
+    display: inline-block;
+    background: #3C3C3C;
+    width: 25%;
+    max-width: 250px;
+}
+
+footer > section#latest-posts > block {
+    display: block;
+}
+
+footer > section#latest-posts h2 {
+    color: #1FAAD0;
+    font-size: 16px;
+}
+
+footer > section#latest-posts > block#latest-blog-posts {
+    padding: 10px 0 10px 10px;   
+}
+
+footer > section#latest-posts > block#latest-blog-posts p {
+    text-align: left;
+    
+}
+
+footer > section#latest-posts > block#latest-blog-posts img {
+    margin-right: 15px;
+    float: left;
+
+}
+
+
+footer > section#latest-posts hr {
+    width: 90%;
+    margin:auto;
+}
+
+footer > section#latest-posts > block#subscribe > block#signup {
+    height: 35px;   
+    display: block;
+    
+}
+
+footer > section#latest-posts > block#subscribe input {
+    width: 60%;
+    height: 100% ;
+    padding: 0;
+    line-height: 100%;
+    padding-left: 5px;
+    margin: 0;
+    border: none;
+    display: inline;
+    color: #585952;
+}
+
+footer > section#latest-posts > block#subscribe button {
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+    display: inline;
+    height: 100% ;
+}
+
+
+footer > section#latest-posts > block#social-links {
+    padding: 30px 0 15px 10px;
+    display: block;
+    text-align: left;
+}
+
+footer > section#copyright {
+    display: block;
+    color: #727272;
+    font-size: 14px;
+    
+}
+
+footer > section#copyright > *{
+    color: #727272 !important;
+}
+
+@media(max-width: 925px) {
+    
+   
+}
+
