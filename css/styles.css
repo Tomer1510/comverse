@@ -1,10 +1,12 @@
 html {
- min-width: 925px;   
+    min-width: 925px;   
 }
 
 .mobile {
     display :none;
 }
+
+
 
 a {
     text-decoration: none;
@@ -15,7 +17,18 @@ h1, p, span {
     color: white;
 }
 
-.section-title, .section-body, .section-footer {
+.arrow {
+    width: 0; 
+    height: 0; 
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid white;
+    position: absolute;
+    right: 15%;
+    top: calc(50% - 7px);
+}
+
+.section-title, .section-body, .section-footer.main {
     text-align: left;
     display: block; 
 }
@@ -89,6 +102,9 @@ button {
     font-size: 15px;
     border: none;
     border-radius: 7px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
 }
 
 
@@ -292,12 +308,12 @@ div.quote {
 }
 
 
-footer {
+footer.main {
     background-color: #292928;
     color: white;
 }
 
-footer > section#menus {
+footer.main > section#menus {
     display: inline-block;
     width: 70%;
     max-width: 700px;
@@ -305,78 +321,78 @@ footer > section#menus {
     margin-top: 20px;
 }
 
-footer > section#menus > .menu > span.menu-title {
+footer.main > section#menus > .menu > span.menu-title {
     font-size: 17px;
     display: inline-block;
     padding-bottom: 15px;
 }
 
-footer > section#menus > .menu {
+footer.main > section#menus > .menu {
     display: inline-block;
     vertical-align: top;
     text-align: left;
     padding: 0 15px;
 }
 
-footer > section#menus > .menu > ul {
+footer.main > section#menus > .menu > ul {
     list-style-type: none;
     padding: 0;
     display: inline;
     vertical-align: top;
 }
 
-footer > section#menus > .menu > ul > li {
+footer.main > section#menus > .menu > ul > li {
     font-size: 13px;
 }
 
-footer > section#menus > .menu > ul > li > a{
+footer.main > section#menus > .menu > ul > li > a{
     color: white !important;
 }
 
-footer > section#latest-posts {
+footer.main > section#latest-posts {
     display: inline-block;
     background: #3C3C3C;
     width: 25%;
     max-width: 250px;
 }
 
-footer > section#latest-posts > section {
+footer.main > section#latest-posts > section {
     display: block;
 }
 
-footer > section#latest-posts h2 {
+footer.main > section#latest-posts h2 {
     color: #1FAAD0;
     font-size: 16px;
 }
 
-footer > section#latest-posts > section#latest-blog-posts {
+footer.main > section#latest-posts > section#latest-blog-posts {
     padding: 10px 0 10px 10px;   
 }
 
-footer > section#latest-posts > section#latest-blog-posts p {
+footer.main > section#latest-posts > section#latest-blog-posts p {
     text-align: left;
     
 }
 
-footer > section#latest-posts > section#latest-blog-posts img {
+footer.main > section#latest-posts > section#latest-blog-posts img {
     margin-right: 15px;
     float: left;
 
 }
 
 
-footer > section#latest-posts hr {
+footer.main > section#latest-posts hr {
     width: 90%;
     margin:auto;
 }
 
-footer > section#latest-posts > section#subscribe > div#signup {
+footer.main > section#latest-posts > section#subscribe > div#signup {
     height: 35px;   
     display: block;
     
 }
 
-footer > section#latest-posts > section#subscribe input {
+footer.main > section#latest-posts > section#subscribe input {
     width: 60%;
     height: 100% ;
     padding: 0;
@@ -388,7 +404,7 @@ footer > section#latest-posts > section#subscribe input {
     color: #585952;
 }
 
-footer > section#latest-posts > section#subscribe button {
+footer.main > section#latest-posts > section#subscribe button {
     width: 30%;
     margin: 0;
     padding: 0;
@@ -398,20 +414,20 @@ footer > section#latest-posts > section#subscribe button {
 }
 
 
-footer > section#latest-posts > section#social-links {
+footer.main > section#latest-posts > section#social-links {
     padding: 30px 0 15px 10px;
     display: block;
     text-align: left;
 }
 
-footer > section.copyright {
+footer.main > section.copyright {
     display: block;
     color: #727272;
     font-size: 14px;
     
 }
 
-footer.main > section.copyright > *{
+footer.main.main > section.copyright > *{
     color: #727272 !important;
 }
 
@@ -427,17 +443,17 @@ footer.main > section.copyright > *{
         display: none;
     }
 
-    header.mobile {
+   header.mobile {
         display: block;
         position: relative;
         padding: 0 0 15px 0;
     }
 
-    header.mobile > img {
+   header.mobile > img {
         width: 110px;
     }
 
-    header.mobile > a#open_mobile_menu, header.mobile > a.search {
+   header.mobile > a#open_mobile_menu,header.mobile > a.search {
         position: absolute;
         bottom: calc(50% - 10px);
         background-size: 67% 67%;
@@ -450,12 +466,12 @@ footer.main > section.copyright > *{
         border: 1px #d9d9d9 solid;
     }
 
-    header.mobile > a#open_mobile_menu {
+   header.mobile > a#open_mobile_menu {
         background-image: url('../img/hamburger-icon.png');
         left: 10px;
     }
 
-    header.mobile > a.search {
+   header.mobile > a.search {
         background-image: url('../img/searchBtnMobile.png');
         right: 10px;
     }
@@ -466,7 +482,7 @@ footer.main > section.copyright > *{
         max-width: 100%;
     }
 
-    .section-title, .section-body, .section-footer {
+    .section-title, .section-body, .section-footer.main {
         text-align: left;
         display: block; 
     }
@@ -516,7 +532,7 @@ footer.main > section.copyright > *{
         margin: 0; 
     }
 
-    #main-content > section:nth-child(2) .section-footer button {
+    #main-content > section:nth-child(2) .section-footer.main button {
         display: none;
     }
 
@@ -552,12 +568,12 @@ footer.main > section.copyright > *{
         font-size: 25px;
     }
 
-    footer.mobile {
+   footer.mobile {
         display: block;
         background: black;
     }
 
-    footer.mobile ul li a, footer.mobile ul li span {
+   footer.mobile ul li a,footer.mobile ul li span {
         text-transform: uppercase;
         color: white;
         text-decoration: none !important;
@@ -565,7 +581,7 @@ footer.main > section.copyright > *{
         font-size: 12px;
     }
 
-    footer.mobile ul li {
+   footer.mobile ul li {
         list-style-type: none;
         margin-top: 2px;
         text-align: left;
@@ -574,28 +590,28 @@ footer.main > section.copyright > *{
         border: 1px #292929 solid;
     }
 
-    footer.mobile ul li:first-child {
+   footer.mobile ul li:first-child {
         margin-top: 0;
     }
 
-    footer.mobile ul {
+   footer.mobile ul {
         padding-left: 0px;
         margin-bottom: 0;
     }
 
-    footer.mobile ul li img {
+   footer.mobile ul li img {
         display: inline-block;
         margin-left: 10px;
     }
 
-    footer.mobile section.copyright {
+   footer.mobile section.copyright {
         display: block;
         background: white;
         padding: 0;
         margin: 0;
     }
 
-    footer.mobile section.copyright > * {
+   footer.mobile section.copyright > * {
         color: #282828;
 
     }
