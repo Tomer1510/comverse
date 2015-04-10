@@ -28,6 +28,17 @@ h1, p, span {
     top: calc(50% - 7px);
 }
 
+.arrow-bullet {
+    width: 0; 
+    height: 0; 
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 5px solid black;
+    position: absolute;
+    left: 9px;
+    top: calc(50% - 4px);
+}
+
 .section-title, .section-body, .section-footer.main {
     text-align: left;
     display: block; 
@@ -45,39 +56,44 @@ section > .contents {
 }
 
 
-header > section > ul.menu {
+header.main > section > ul.menu {
     text-transform: uppercase;
 
 }
 
-header > section > ul.menu a {
+header.main > section > ul.menu a {
     color: #585952;
-    
+    font-size: 13px;
 }
 
-header > section > ul.menu {
+header.main > section > ul.menu {
     list-style-type: none;
     padding: 0;
     display: inline;
     vertical-align: bottom;
 }
 
-header > section > ul.menu > li {
+header.main > section > ul.menu > li {
     display: inline;
-    padding: 0 15px;
+    padding: 0 10px;
     vertical-align: bottom;
 }
 
-header {
+header.main {
     vertical-align: bottom;
     padding: 15px 5px;
     text-align: center;
     -webkit-box-shadow: 0px 2px 16px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 16px -3px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 16px -3px rgba(0,0,0,0.75);
+    position: fixed;
+    background: white;
+    width: 100%;
+    top: 0;
+    z-index: 3;
 }
 
-header > section > img {
+header.main > section > img {
     vertical-align: bottom;
 }
 
@@ -85,6 +101,9 @@ html {
     text-align: center;
 }
 
+#main-content {
+    margin-top: 90px;
+}
 
 
 #main-content > section:nth-child(1) {
@@ -449,11 +468,11 @@ footer.main.main > section.copyright > *{
         padding: 0 0 15px 0;
     }
 
-   header.mobile > img {
+   header.mobile > nav > img {
         width: 110px;
     }
 
-   header.mobile > a#open_mobile_menu,header.mobile > a.search {
+   header.mobile > nav > a#open_mobile_menu,header.mobile > nav > a.search {
         position: absolute;
         bottom: calc(50% - 10px);
         background-size: 67% 67%;
@@ -466,14 +485,59 @@ footer.main.main > section.copyright > *{
         border: 1px #d9d9d9 solid;
     }
 
-   header.mobile > a#open_mobile_menu {
+   header.mobile > nav > a#open_mobile_menu {
         background-image: url('../img/hamburger-icon.png');
         left: 10px;
     }
 
-   header.mobile > a.search {
+   header.mobile > nav > a.search {
         background-image: url('../img/searchBtnMobile.png');
         right: 10px;
+    }
+
+    header.mobile ul.mobile_menu {
+        list-style: none;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 0;
+        border-top: 1px #e1e0e1 solid;
+        position: absolute;
+        width: 100%;
+        margin-top: 15px;
+        z-index: 2;
+        webkit-box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.2);
+    }
+
+    header.mobile ul.mobile_menu.hide {
+        display: none;
+    }
+
+
+    header.mobile ul.mobile_menu li {
+        height: 35px;
+        width: 100%;
+        background: #f1f0f1;
+        font-size: 14px;
+        padding: 1px 10px 1px 25px;
+        border-bottom: 1px solid #dbdbdb;
+        border-top: 1px solid #fff;
+        line-height: 38px;
+        position: relative;
+    }
+
+    header.mobile ul.mobile_menu li:last-child {
+    }
+
+    header.mobile ul.mobile_menu li a {
+
+        color: #585951;
+        text-transform: uppercase;
+        text-decoration: none !important;
+    }
+
+    #main-content {
+        margin-top: 0;
     }
 
     section > .contents {
