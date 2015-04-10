@@ -2,6 +2,10 @@ html {
  min-width: 925px;   
 }
 
+.mobile {
+    display :none;
+}
+
 a {
     text-decoration: none;
 }
@@ -11,17 +15,16 @@ h1, p, span {
     color: white;
 }
 
-section-title, section-body, section-footer {
+.section-title, .section-body, .section-footer {
     text-align: left;
-    display: inline-block;
-    
+    display: block; 
 }
 
 section {
     text-align: center;
 }
 
-section > contents {
+section > .contents {
     display: inline-block;
     max-width: 900px;
     text-align: left;
@@ -71,7 +74,7 @@ html {
 
 
 
-middle > section:nth-child(1) {
+#main-content > section:nth-child(1) {
     
     background-image: url("../img/slide-bg-complexity.jpg");
     background-size: auto auto;
@@ -89,7 +92,7 @@ button {
 }
 
 
-content-box {
+#boxes > article {
     color: white;
     font-size: 20px;
     width: 29%;
@@ -101,21 +104,21 @@ content-box {
     text-align: left;
 }
 
-content-box > a {
+#boxes > article > a {
     color: white;
     font-size: 14px;
 }
 
-content-box:nth-child(1) {
+#boxes > article:nth-child(1) {
     margin-left: 0;
     background: #FB368F;
 }
 
-content-box:nth-child(2) {
+#boxes > article:nth-child(2) {
     background: #5DC14D;
 }
 
-content-box:nth-child(3) {
+#boxes > article:nth-child(3) {
     background: #FF702C;
 }
 
@@ -124,7 +127,7 @@ section#boxes {
     
 }
 
-middle > section:nth-child(2) {
+#main-content > section:nth-child(2) {
     background: rgb(0,160,195); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(0,160,195,1) 0%, rgba(45,185,211,1) 50%, rgba(0,160,195,1) 95%, rgba(0,160,195,1) 97%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,160,195,1)), color-stop(50%,rgba(45,185,211,1)), color-stop(95%,rgba(0,160,195,1)), color-stop(97%,rgba(0,160,195,1))); /* Chrome,Safari4+ */
@@ -137,10 +140,9 @@ middle > section:nth-child(2) {
 }
 
 
-solutions > solution {
+#solutions > article.solution {
     display: inline-block;
     width: 14%;
-    
     color: white;
     text-align: center;
     margin: 0 1% 0 1%;
@@ -148,14 +150,14 @@ solutions > solution {
 }
 
 
-middle > section:nth-child(3) {
+#main-content > section:nth-child(3) {
 
     background-image: url("../img/news-and-events-bg.jpg");
     background-size: auto auto;
     background-repeat: no-repeat;
 }
 
-middle > section:nth-child(3) > contents > section-body > block {
+#main-content > section:nth-child(3) > .contents > .section-body > article {
     display: inline-block;
     width: 30%;
     margin: 0 1.5% 0 1.5%;
@@ -164,7 +166,7 @@ middle > section:nth-child(3) > contents > section-body > block {
 }
 
 
-middle > section:nth-child(3) > contents > section-body > block > description {
+#main-content > section:nth-child(3) > .contents > .section-body > article > .description {
     background: white;
     opacity: 0.8;
     color: black;
@@ -174,13 +176,13 @@ middle > section:nth-child(3) > contents > section-body > block > description {
     
 }
 
-middle > section:nth-child(3) description > img {
+#main-content > section:nth-child(3) .description > img {
     float: left;   
     margin-right: 10px;
 }
 
 
-middle > section:nth-child(3) block-footer {
+#main-content > section:nth-child(3) .footer {
     color: white;
     font-size: 14px;
     display: inline-block;
@@ -188,16 +190,17 @@ middle > section:nth-child(3) block-footer {
 }
 
 
-middle > section:nth-child(4) {
- background: #ECECEC;  
+#main-content > section:nth-child(4) {
+    background: #ECECEC;  
     
 }
 
-middle > section:nth-child(4) > contents > section-title > h1 {
- color: #565656;   
+#main-content > section:nth-child(4) > .contents > .section-title > h1 {
+    color: #565656;
+    text-align: center;   
 }
 
-middle > section:nth-child(4) column {
+#main-content > section:nth-child(4) .column {
     width: 31%;
     margin: 0 1% 0 1%;
     display: inline-block;
@@ -205,26 +208,26 @@ middle > section:nth-child(4) column {
     
 }
 
-middle > section:nth-child(4) column > block {
+#main-content > section:nth-child(4) .column > article {
     display: inline-block;
     padding: 15px 1% 2% 2%;
     background: white;
     color: #565656;   
 }
 
-middle > section:nth-child(4) column > block a {
+#main-content > section:nth-child(4) .column > article a {
     color: #00AFDA;
     font-size: 14px;
 }
 
 
-middle > section:nth-child(4) column > block img:first-child {
+#main-content > section:nth-child(4) .column > article img:first-child {
     float: left; 
     margin-right: 10px;
 }
 
-quote {
-    background-image: url("/img/quote-grey.png");   
+div.quote {
+    background-image: url("../img/quote-grey.png");   
     display: inline-block;
     width: 27px;
     height: 20px;
@@ -233,12 +236,12 @@ quote {
     margin: 0 5px 0 0px;
 }
 
-middle > section:nth-child(4) column > block span {
+#main-content > section:nth-child(4) .column > article span {
     color: #565656;
     font-size: 14px;
 }
 
-logos > company.col-3 {
+.logos > .company.col-3 {
     width: 31.2%;
     float: left;
     display: inline-block;
@@ -252,16 +255,16 @@ logos > company.col-3 {
 }
 
 
-logos:last-child > company.col-3 {
+.logos:last-child > .company.col-3 {
     margin-bottom: 0;
 }
 
-logos:first-child > company.col-3 {
+.logos:first-child > .company.col-3 {
     margin-top: 0;
 }
 
 
-logos > company.col-2 {
+.logos > .company.col-2 {
     width: 48%;
     float: left;
     display: inline-block;
@@ -273,18 +276,18 @@ logos > company.col-2 {
     margin-right: 1%;
     background: white;
 }
-company.col-3 {
+.company.col-3 {
     float: left;
     display: inline-block;
 }
 
 
 
-logos:last-child > company.col-2 {
+.logos:last-child > .company.col-2 {
     margin-bottom: 0;
 }
 
-logos:first-child > company.col-2 {
+.logos:first-child > .company.col-2 {
     margin-top: 0;
 }
 
@@ -299,32 +302,34 @@ footer > section#menus {
     width: 70%;
     max-width: 700px;
     vertical-align: top;
+    margin-top: 20px;
 }
 
-footer > section#menus > menu > menu-title {
+footer > section#menus > .menu > span.menu-title {
     font-size: 17px;
     display: inline-block;
     padding-bottom: 15px;
 }
 
-footer > section#menus > menu {
+footer > section#menus > .menu {
     display: inline-block;
     vertical-align: top;
     text-align: left;
+    padding: 0 15px;
 }
 
-footer > section#menus > menu > ul {
+footer > section#menus > .menu > ul {
     list-style-type: none;
     padding: 0;
     display: inline;
     vertical-align: top;
 }
 
-footer > section#menus > menu > ul > li {
+footer > section#menus > .menu > ul > li {
     font-size: 13px;
 }
 
-footer > section#menus > menu > ul > li > a{
+footer > section#menus > .menu > ul > li > a{
     color: white !important;
 }
 
@@ -335,7 +340,7 @@ footer > section#latest-posts {
     max-width: 250px;
 }
 
-footer > section#latest-posts > block {
+footer > section#latest-posts > section {
     display: block;
 }
 
@@ -344,16 +349,16 @@ footer > section#latest-posts h2 {
     font-size: 16px;
 }
 
-footer > section#latest-posts > block#latest-blog-posts {
+footer > section#latest-posts > section#latest-blog-posts {
     padding: 10px 0 10px 10px;   
 }
 
-footer > section#latest-posts > block#latest-blog-posts p {
+footer > section#latest-posts > section#latest-blog-posts p {
     text-align: left;
     
 }
 
-footer > section#latest-posts > block#latest-blog-posts img {
+footer > section#latest-posts > section#latest-blog-posts img {
     margin-right: 15px;
     float: left;
 
@@ -365,13 +370,13 @@ footer > section#latest-posts hr {
     margin:auto;
 }
 
-footer > section#latest-posts > block#subscribe > block#signup {
+footer > section#latest-posts > section#subscribe > div#signup {
     height: 35px;   
     display: block;
     
 }
 
-footer > section#latest-posts > block#subscribe input {
+footer > section#latest-posts > section#subscribe input {
     width: 60%;
     height: 100% ;
     padding: 0;
@@ -383,7 +388,7 @@ footer > section#latest-posts > block#subscribe input {
     color: #585952;
 }
 
-footer > section#latest-posts > block#subscribe button {
+footer > section#latest-posts > section#subscribe button {
     width: 30%;
     margin: 0;
     padding: 0;
@@ -393,25 +398,207 @@ footer > section#latest-posts > block#subscribe button {
 }
 
 
-footer > section#latest-posts > block#social-links {
+footer > section#latest-posts > section#social-links {
     padding: 30px 0 15px 10px;
     display: block;
     text-align: left;
 }
 
-footer > section#copyright {
+footer > section.copyright {
     display: block;
     color: #727272;
     font-size: 14px;
     
 }
 
-footer > section#copyright > *{
+footer.main > section.copyright > *{
     color: #727272 !important;
 }
 
-@media(max-width: 925px) {
-    
-   
+@media(max-width: 700px) {
+
+
+    html {
+        min-width: 0;
+        overflow-x: hidden;
+    } 
+
+    .main {
+        display: none;
+    }
+
+    header.mobile {
+        display: block;
+        position: relative;
+        padding: 0 0 15px 0;
+    }
+
+    header.mobile > img {
+        width: 110px;
+    }
+
+    header.mobile > a#open_mobile_menu, header.mobile > a.search {
+        position: absolute;
+        bottom: calc(50% - 10px);
+        background-size: 67% 67%;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        background-position: center; 
+        border: 1px #d9d9d9 solid;
+    }
+
+    header.mobile > a#open_mobile_menu {
+        background-image: url('../img/hamburger-icon.png');
+        left: 10px;
+    }
+
+    header.mobile > a.search {
+        background-image: url('../img/searchBtnMobile.png');
+        right: 10px;
+    }
+
+    section > .contents {
+        padding: 0; 
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .section-title, .section-body, .section-footer {
+        text-align: left;
+        display: block; 
+    }
+
+    .section-title, .section-body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #main-content > section:first-child {
+        background-size: auto 100%;
+    }
+
+    #main-content > section:first-child .section-title {
+        background: #0095C5;
+        opacity: 0.7;  
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    #main-content > section:first-child .section-body {
+        background: #0095C5;
+        opacity: 0.7; 
+    }
+
+    #main-content > section:first-child .section-body p {
+        margin: 0;
+    }
+
+    #boxes > article {
+        width: 100%;
+        padding-top: 10px;
+        margin-top: 10px;
+        display: block;
+        margin-left: 0;
+    }   
+
+    #boxes > article:first-child {
+        margin-top: 0;
+    }
+
+
+    #solutions > article.solution {
+        display: inline-block;
+        width: 32%;
+        margin: 0; 
+    }
+
+    #main-content > section:nth-child(2) .section-footer button {
+        display: none;
+    }
+
+    #main-content > section:nth-child(2) .section-title, #main-content > section:nth-child(3) .section-title {
+        text-align: center;
+    }
+
+    #main-content > section:nth-child(3) {
+        background-size: auto 100%;
+    }
+
+    #main-content > section:nth-child(3) > .contents > .section-body > article {
+        display: block;
+        width: 95%;
+        margin: auto;
+    }
+
+    #main-content > section:nth-child(3) h1 {
+        margin-bottom: 0;
+    }
+
+    #main-content > section:nth-child(3) > .contents > .section-body > article > .description {
+        opacity: 0.6;
+    }
+
+    #main-content > section:nth-child(4) .column {
+        width: 98%;
+        margin: auto;
+        display: block;
+    }
+
+    #main-content > section:nth-child(4) > .contents > .section-title > h1 {
+        font-size: 25px;
+    }
+
+    footer.mobile {
+        display: block;
+        background: black;
+    }
+
+    footer.mobile ul li a, footer.mobile ul li span {
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none !important;
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    footer.mobile ul li {
+        list-style-type: none;
+        margin-top: 2px;
+        text-align: left;
+        background: #1f1f1f;
+        padding: 10px 10px;
+        border: 1px #292929 solid;
+    }
+
+    footer.mobile ul li:first-child {
+        margin-top: 0;
+    }
+
+    footer.mobile ul {
+        padding-left: 0px;
+        margin-bottom: 0;
+    }
+
+    footer.mobile ul li img {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    footer.mobile section.copyright {
+        display: block;
+        background: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer.mobile section.copyright > * {
+        color: #282828;
+
+    }
+
 }
 
