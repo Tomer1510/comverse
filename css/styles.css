@@ -1,5 +1,5 @@
 html {
-    min-width: 925px;   
+    min-width: 925px;
 }
 
 .mobile {
@@ -37,6 +37,40 @@ h1, p, span {
     position: absolute;
     left: 9px;
     top: calc(50% - 4px);
+}
+
+div.youtube {
+    background-image: url('../img/socialMenuIcon-youtube.png');
+}
+
+div.youtube:hover {
+    background-image: url('../img/socialMenuIcon-youtube_hover.png');
+}
+
+div.linkedin {
+    background-image: url('../img/socialMenuIcon-linkdin.png');
+}
+
+div.linkedin:hover {
+    background-image: url('../img/socialMenuIcon-linkdin_hover.png');
+}
+
+div.twitter {
+    background-image: url('../img/socialMenuIcon-twitter.png');
+}
+
+div.twitter:hover {
+    background-image: url('../img/socialMenuIcon-twitter_hover.png');
+}
+
+div.twitter, div.linkedin, div.youtube {
+    height: 22px;
+    width: 22px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer;
 }
 
 .section-title, .section-body, .section-footer.main {
@@ -132,11 +166,15 @@ button {
     font-size: 20px;
     width: 29%;
     display: inline-block;
-    opacity: 0.8;
+    opacity: 0.75;
     padding: 0px 1% 15px 1%;
     margin: 0 1%;
     border-radius: 5px;
     text-align: left;
+}
+
+#boxes > article:hover {
+    opacity: 1;
 }
 
 #boxes > article > a {
@@ -203,12 +241,15 @@ section#boxes {
 
 #main-content > section:nth-child(3) > .contents > .section-body > article > .description {
     background: white;
-    opacity: 0.8;
+    opacity: 0.6;
     color: black;
     float: left;
     padding: 10px;
     font-size: 15px;
-    
+}
+
+#main-content > section:nth-child(3) > .contents > .section-body > article > .description:hover {
+    opacity: 1;
 }
 
 #main-content > section:nth-child(3) .description > img {
