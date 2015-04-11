@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -23,7 +24,7 @@
         <!-- Add your site or application content here -->
         <header class="main">
             <section>
-                <img src="img/comverse-logo.png" alt="Comverse logo">
+                <img src="img/comverse-logo.png" alt="Comverse logo" itemprop="logo">
                 <ul class="menu">
                     <li><a href="#">Your Needs</a></li>
                     <li><a href="#">Our Portfolio</a></li>
@@ -36,7 +37,7 @@
         <header class="mobile">
             <nav>
                 <a href="#" id="open_mobile_menu"></a>
-                <img src="img/comverse-logo.png" alt="Comverse logo">
+                <img src="img/comverse-logo.png" alt="Comverse logo" itemprop="logo">
                 <a href="#" class="search"></a>
             </nav>
             <ul class="mobile_menu hide">
@@ -47,7 +48,7 @@
             </ul>
         </header>
         
-        <div id="main-content">
+        <div id="main-content" itemscope itemtype="http://schema.org/Organization">
             <section>
                 <div class="contents">
                     <div class="section-title">
@@ -59,7 +60,6 @@
                             <b>1st</b> Ever Marketing-Oriented Policy Tool</p>
                         <button>LEARN MORE<div class="arrow"></div></button>
                     </div>
-                    <br>
                     <div class="section-footer">
                     <section id="boxes">
                         <article>
@@ -95,33 +95,51 @@
                     <div class="section-body">
                         <div id="solutions">
                             <article class="solution">
-                                <img src="img/solution_icon_smart-money.png" alt="Data monetization">
-                                <p>Data monetization</p>
+                                <div class="sol">
+                                    <img src="img/solution_icon_smart-money.png" alt="Data monetization">
+                                    <img src="img/solution_icon_smart-money_hover.png" alt="Data monetization">
+                                </div>
+                                <p itemprop="name">Data monetization</p>
                             </article>
 
                             <article class="solution">
-                                <img src="img/solution_icon_optimize-efficnt.png" alt="Machine to machine">
-                                <p>Machine to machine (M2M)</p>
+                                <div class="sol">
+                                    <img src="img/solution_icon_optimize-efficnt.png" alt="Machine to machine">
+                                    <img src="img/solution_icon_optimize-efficnt_hover.png" alt="Machine to machine">
+                                </div>
+                                <p itemprop="name">Machine to machine (M2M)</p>
                             </article>
 
                             <article class="solution">
-                                <img src="img/solution_icon_optimize-efficnt.png" alt="Over-the-top">
-                                <p>Over-the-top<br>(OTT)</p>
+                                <div class="sol">
+                                    <img src="img/solution_icon_optimize-efficnt.png" alt="Over-the-top">
+                                    <img src="img/solution_icon_optimize-efficnt_hover.png" alt="Over-the-top">
+                                </div>
+                                <p itemprop="name">Over-the-top<br>(OTT)</p>
                             </article>
 
                             <article class="solution">
-                                <img src="img/solution_icon_optimize-efficnt.png" alt="Cloud computing">
-                                <p>Cloud computing</p>
+                                <div class="sol">
+                                    <img src="img/solution_icon_optimize-efficnt.png" alt="Cloud computing">
+                                    <img src="img/solution_icon_optimize-efficnt_hover.png" alt="Cloud computing">
+                                </div>
+                                <p itemprop="name">Cloud computing</p>
                             </article>
 
                             <article class="solution">
-                                <img src="img/solution_icon_optimize-efficnt.png" alt="Managed services">
-                                <p>Managed services</p>
+                                <div class="sol">
+                                    <img src="img/solution_icon_optimize-efficnt.png" alt="Managed services">
+                                    <img src="img/solution_icon_optimize-efficnt_hover.png" alt="Managed services">
+                                </div>
+                                <p itemprop="name">Managed services</p>
                             </article>
 
                             <article class="solution">
-                                <img src="img/solution_icon_optimize-efficnt.png" alt="Social media">
-                                <p>Social media</p>
+                                <div class="sol">
+                                    <img src="img/solution_icon_optimize-efficnt.png" alt="Social media">
+                                    <img src="img/solution_icon_optimize-efficnt_hover.png" alt="Social media">
+                                </div>
+                                <p itemprop="name">Social media</p>
                             </article>
                         </div>
                     </div>
@@ -141,35 +159,41 @@
                     </div>
                     <br>
                     <div class="section-body">
-                        <article>
+                        <article itemscope itemtype="http://schema.org/NewsArticle">
                             <h1>NEWS</h1>
-                            <div class="description">
-                                <img src="img/04.png">
-                                Comverse regains lead in convergent charging market regains lead in
+                            <div class="description" itemprop="description">
+                                <img itemprop="datePublished" src="img/04.png">
+                                <span itemprop="articleBody">
+                                    Comverse regains lead in convergent charging market regains lead in
+                                </span>
                             </div>
                             <br>
                             <div class="footer"><img src="img/eventListIconNews.png" alt="All News">&nbsp; All News</div>
 
                         </article>
                         
-                         <article>
+                         <article itemscope itemtype="http://schema.org/NewsArticle">
                             <h1>EVENTS</h1>
                             
-                            <div class="description">
-                                <img src="img/04.png">
-                                Comverse regains lead in convergent charging market regains lead in
+                            <div class="description" itemprop="description">
+                                <img itemprop="datePublished" src="img/04.png">
+                                <span itemprop="articleBody">
+                                    Comverse regains lead in convergent charging market regains lead in
+                                </span>
                             </div>
                              
                             <div class="footer"><img src="img/eventListIconNews.png" alt="All Events">&nbsp; All Events</div>
                              
                         </article>
                         
-                        <article>
+                        <article itemscope itemtype="http://schema.org/NewsArticle">
                             <h1>BLANK</h1>
                             
-                            <div class="description">
-                                <img src="img/04.png">
-                                Comverse regains lead in convergent charging market regains lead in
+                            <div class="description" itemprop="description">
+                                <img itemprop="datePublished" src="img/04.png">
+                                <span itemprop="articleBody">
+                                    Comverse regains lead in convergent charging market regains lead in
+                                </span>
                             </div>
                             
                             <div class="footer"><img src="img/eventListIconNews.png" alt="All Events">&nbsp; All Events</div>
@@ -190,15 +214,17 @@
                     <br>
                     <div class="section-body" >
                         <div class="column">
-                            <article>
+                            <article itemscope itemtype="http://schema.org/Review">
                                 <img src="img/CB-JP-face.png" alt="Sergey Korotych">
                                 <div class="quote"></div>
-                                We have very good and very warm relations with Comverse. We always achieve...
+                                <span itemprop="reviewBody">We have very good and very warm relations with <span itemprop="itemReviewed">Comverse</span>. We always achieve...</span>
                                 <div class="quote"></div>
                                 <hr>
-                                <a>SERGEY KOROTYCH</a>
-                                <br>
-                                <span>Deputy CTO, 3 Mob Ukraine</span>
+                                <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                    <a itemrop="name">SERGEY KOROTYCH</a>
+                                    <br>
+                                    <span itemprop="jobTitle">Deputy CTO</span>, <span itemprop="jobTitle">3 Mob Ukraine</span>
+                                </div>
                             </article>
                             <div class="logos">
                                 <div class="company col-3"></div>
@@ -214,31 +240,35 @@
                                 <div class="company col-3"></div>
                                 <div class="company col-3"></div>
                             </div>
-                            <article>
+                            <article itemscope itemtype="http://schema.org/Review">
                                 <img src="img/CB-JP-face.png" alt="Sergey Korotych">
                                 
                                 <div class="quote"></div>
-                                We have very good and very warm relations with Comverse. We always achieve...
+                                <span itemprop="reviewBody">We have very good and very warm relations with <span itemprop="itemReviewed">Comverse</span>. We always achieve...</span>
                                 <div class="quote"></div>
                                 <hr>
-                                <a>ADALE KEHASSAN</a>
-                                <br>
-                                <span>CIO of Multi-Links</span>
+                                <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                    <a itemprop="name">ADALE KEHASSAN</a>
+                                    <br>
+                                    <span itemprop="jobTitle">CIO of </span><span itemprop="worksFor">Multi-Links</span>
+                                </div>
                             </article>
                         </div>
                         
                         
                         
                         <div class="column">
-                            <article>
+                            <article itemscope itemtype="http://schema.org/Review">
                                 <img src="img/CB-JP-face.png" alt="Sergey Korotych">
                                 <div class="quote"></div>
-                                We have very good and very warm relations with Comverse. We always achieve...
+                                <span itemprop="reviewBody">We have very good and very warm relations with <span itemprop="itemReviewed">Comverse</span>. We always achieve...</span>
                                 <div class="quote"></div>
                                 <hr>
-                                <a>RAVISHANKER</a>
-                                <br>
-                                <span>Tata Sky CIO N.</span>
+                                <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                    <a itemprop="name">RAVISHANKER</a>
+                                    <br>
+                                    <span itemprop="worksFor">Tata Sky</span> <span itemprop="jobTitle">CIO N.</span>
+                                </div>
                             </article>
                             <div class="logos">
                                 <div class="company col-2"></div>
