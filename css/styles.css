@@ -294,29 +294,84 @@ section#boxes {
 
 #main-content > section:nth-child(4) .column {
     width: 31%;
-    margin: 0 1% 0 1%;
+    margin: 0 0% 0 0%;
     display: inline-block;
     vertical-align: bottom;
     
 }
 
-#main-content > section:nth-child(4) .column > article {
+#main-content > section:nth-child(4) .column  article {
     display: inline-block;
     padding: 15px 1% 2% 2%;
     background: white;
     color: #565656;   
 }
 
-#main-content > section:nth-child(4) .column > article a {
+#main-content > section:nth-child(4) .review {
+    perspective: 2000;
+    -webkit-perspective: 2000;
+    transform-style: preserve-3d;
+}
+
+#main-content > section:nth-child(4) .column  .review .flip-container {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+    height: 250px;
+}
+
+#main-content > section:nth-child(4) .column  .review .flip-container > article {
+    backface-visibility: hidden;
+    height: 225px;
+}
+
+#main-content > section:nth-child(4) .column  .review article:first-child {
+    z-index: 2;
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#main-content > section:nth-child(4) .column  .review article:nth-child(2) {
+    background: #3AA6DB;
+    transform: rotateY(180deg);
+}
+
+
+#main-content > section:nth-child(4) .column  .review article:nth-child(2) * {
+    background: #3AA6DB;
+    color: white;
+}
+
+
+#main-content > section:nth-child(4) .column  .review article:nth-child(2) {
+    transform: rotateY(180deg);
+}
+
+
+#main-content > section:nth-child(4) .column  .review:hover .flip-container {
+    transform: rotateY(180deg);
+}
+
+
+#main-content > section:nth-child(4) .column  .review  article:nth-child(2) div.quote {
+        background-image: url("../img/quote-blue.png");  
+        width: 32px; 
+}
+
+#main-content > section:nth-child(4) .column  article a {
     color: #00AFDA;
     font-size: 14px;
 }
 
 
-#main-content > section:nth-child(4) .column > article img:first-child {
+#main-content > section:nth-child(4) .column article img:first-child {
     float: left; 
     margin-right: 10px;
 }
+
+
 
 div.quote {
     background-image: url("../img/quote-grey.png");   
@@ -328,7 +383,7 @@ div.quote {
     margin: 0 5px 0 0px;
 }
 
-#main-content > section:nth-child(4) .column > article span {
+#main-content > section:nth-child(4) .column  article span {
     color: #565656;
     font-size: 14px;
 }
@@ -352,7 +407,10 @@ div.quote {
     margin-bottom: 4px;
 }
 
-
+.logos {
+   width: 100%;
+   height: 100px;
+}
 .logos > .company.col-2 {
     width: 48%;
     float: left;
