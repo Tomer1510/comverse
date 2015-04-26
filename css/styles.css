@@ -165,11 +165,11 @@ header.main > section > ul.menu > li {
 }
 
 header.main > section > ul.menu > li:hover > a{
-    -webkit-box-shadow: -8px 10px 10px -4px rgba(0,0,0,0.6);
-    -moz-box-shadow: -8px 10px 10px -4px rgba(0,0,0,0.6);
-    box-shadow: -8px 10px 10px -4px rgba(0,0,0,0.6);
-    padding: 5px 0px 25px 10px;
-    
+    -webkit-box-shadow: -10px 6px 10px -2px rgba(0,0,0,0.4);
+    -moz-box-shadow: -10px 6px 10px -2px rgba(0,0,0,0.4);
+    box-shadow: -10px 6px 10px -2px rgba(0,0,0,0.4);
+    padding: 5px 10px 25px 10px;
+    border: 1px #D5D5D5 solid;
     background: #fcfcfc;
     
 }
