@@ -172,6 +172,10 @@ header.main > section > ul.menu > li:hover > a{
     border: 1px #D5D5D5 solid;
     background: #fcfcfc;
     
+    /*overflow-y: hidden;
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);*/
 }
 
 
@@ -181,6 +185,7 @@ header.main > section > ul.menu > li:hover .dropdown {
 
 header.main > section > ul.menu > li > .dropdown:hover {
     display: inline-block;
+
 }
 
 header.main li  .dropdown > .column {
@@ -227,8 +232,38 @@ html {
     background-attachment: fixed;
     background-repeat:  no-repeat;
     background-position: center 90px;      
+ -webkit-transition: background-image .5s ease-in-out;
+  -moz-transition: background-image .5s ease-in-out;
+  -o-transition: background-image .5s ease-in-out;
+  transition: background-image .5s ease-in-out;
+
 }
 
+#main-content > section:nth-child(1)[data-slideshow="2"] {
+    background-image: url("../img/news-and-events-bg.jpg");
+
+    
+}
+
+.slideshow_dots {
+      list-style: none;
+      color: white;
+}
+
+
+.slideshow_dots > .slideshow_dot {
+    float: left;
+    height: 10px;
+    width: 10px;
+    background: white;
+    margin: 0px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slideshow_dots > .slideshow_dot.selected {
+    background-color: #2e95ca;
+}
 
 button {
     background-color: #0095C5;
