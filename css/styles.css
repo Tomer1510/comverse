@@ -227,6 +227,7 @@ html {
 }
 
 
+
 #main-content > section:nth-child(1) {
     background-image: url("../img/slide-bg-complexity.jpg");
     background-attachment: fixed;
@@ -236,7 +237,13 @@ html {
   -moz-transition: background-image .5s ease-in-out;
   -o-transition: background-image .5s ease-in-out;
   transition: background-image .5s ease-in-out;
+ 
 
+}
+
+
+#main-content > section:nth-child(1) h1, #main-content > section:nth-child(1) p{
+     color: black;
 }
 
 #main-content > section:nth-child(1)[data-slideshow="2"] {
@@ -245,11 +252,37 @@ html {
     
 }
 
+#main-content > section:nth-child(1)  div.learn-more {
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    order: 2;
+    margin-top: 15px;
+}
+
+#main-content > section:nth-child(1)  div.learn-more > button {
+    display: inline-block;
+}
+
+#slideshow_controls {
+    width: 100%;
+    order: 1;
+}
+
 .slideshow_dots {
       list-style: none;
       color: white;
+      font-size: 0;
+      margin-top: 15px;
+      padding-left: 0;
 }
 
+.flex {
+     display: -webkit-flex; /* Safari */
+    -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-flow: row wrap;
+}
 
 .slideshow_dots > .slideshow_dot {
     float: left;
@@ -277,9 +310,11 @@ button {
     cursor: pointer;
 }
 
+#main-content > section:nth-child(1) #boxes > article p {
+        color: white;
+}
 
 #boxes > article {
-    color: white;
     font-size: 20px;
     width: 29%;
     display: inline-block;
@@ -757,6 +792,31 @@ footer.main.main > section.copyright > *{
         text-decoration: none !important;
     }
 
+
+    header.mobile > .search_div {
+        display: none;
+        height: 45px;
+        width: 100%;
+        position: absolute;
+        margin-top: 15px;
+        z-index: 3;
+        left: 0;
+        background: white;
+        border-top: 1px solid #dbdbdb;
+    }
+
+
+    header.mobile > .search_div > input.search_box {
+        width: 90%;
+        height: 25px;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #D1D1D1;
+        margin-top: 8px;
+        padding: 1px 10px;
+
+    }
+
     #main-content {
         margin-top: 0;
     }
@@ -777,12 +837,46 @@ footer.main.main > section.copyright > *{
         padding-right: 10px;
     }
 
+    #main-content > section:nth-child(1) {
+        background-position: center 50px;
+    }
+
+    #main-content > section:nth-child(1)  div.learn-more {
+        order: 1;
+
+    }
+
+    #slideshow_controls {
+        order: 2;
+    }
+
+    .slideshow_dots {
+        font-size: 15px;
+    }
+
+
+    .slideshow_dots > .slideshow_dot {
+        border-radius: 0;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #565656;
+        margin-left: 0;
+    }
+
+    .slideshow_dots > .slideshow_dot.selected {
+        color: white;
+    }
+
+
+
+
     #main-content > section:first-child {
         background-size: auto 100%;
     }
 
     #main-content > section:first-child .section-title {
-        background: #0095C5;
         opacity: 0.7;  
         padding-top: 10px;
         padding-bottom: 10px;
@@ -790,7 +884,6 @@ footer.main.main > section.copyright > *{
     }
 
     #main-content > section:first-child .section-body {
-        background: #0095C5;
         opacity: 0.7; 
     }
 

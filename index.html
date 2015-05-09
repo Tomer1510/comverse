@@ -176,7 +176,7 @@
             <nav>
                 <a href="#" id="open_mobile_menu"></a>
                 <img src="img/comverse-logo.png" alt="Comverse logo" itemprop="logo">
-                <a href="#" class="search"></a>
+                <a href="#" class="search" onclick="$('header.mobile > .search_div').toggle()"></a>
             </nav>
             <ul class="mobile_menu hide">
                 <li><div class="arrow-bullet"></div><a href="#">Your Needs</a></li>
@@ -184,6 +184,9 @@
                 <li><div class="arrow-bullet"></div><a href="#">News & Media</a></li>
                 <li><div class="arrow-bullet"></div><a href="#">About Comverse</a></li>
             </ul>
+            <div class="search_div">
+                <input type="text" placeholder="Search" class="search_box">
+            </div>
         </header>
         
         <div id="main-content" itemscope itemtype="http://schema.org/Organization">
@@ -196,17 +199,24 @@
                     <div class="section-body">
                         <p>Comverse Policy Studio<br>
                             <b>1st</b> Ever Marketing-Oriented Policy Tool</p>
-                        <div id="slideshow_controls">
-                            <ol class="slideshow_dots">
-                                <li data-nth="1" class="slideshow_dot selected"></li>
-                                <li data-nth="2" class="slideshow_dot"></li>
-                                <li data-nth="3" class="slideshow_dot"></li>
-                                <li data-nth="4" class="slideshow_dot"></li>
-                                <li data-nth="5" class="slideshow_dot"></li>
-                            </ol>
-                            <br>
+
+                        <div class="flex">
+                            <div id="slideshow_controls">
+                                <ol class="slideshow_dots">
+                                    <li data-nth="1" class="slideshow_dot selected">1</li>
+                                    <li data-nth="2" class="slideshow_dot">2</li>
+                                    <li data-nth="3" class="slideshow_dot">3</li>
+                                    <li data-nth="4" class="slideshow_dot">4</li>
+                                    <li data-nth="5" class="slideshow_dot">5</li>
+                                </ol>
+                                <br>
+                            </div>
+                            <div class="learn-more">
+                                <button>LEARN MORE<div class="arrow"></div></button>
+                            </div>
                         </div>
-                        <button>LEARN MORE<div class="arrow"></div></button>
+
+
                     </div>
                     <div class="section-footer">
                     <section id="boxes">
