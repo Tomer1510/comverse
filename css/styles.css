@@ -369,12 +369,14 @@ section#boxes {
 }
 
 .sol:hover > img:last-child{
-    display: block;
+    display: inline-block;
 }
 
 .sol:hover > img:first-child{
     display: none;
 }
+
+
 
 #solutions > article.solution {
     display: inline-block;
