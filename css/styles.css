@@ -376,6 +376,13 @@ section#boxes {
     display: none;
 }
 
+#main-content > section:nth-child(2) .section-footer {
+    text-align: center;
+}
+
+#main-content > section:nth-child(2) .section-footer > button {
+    margin: 0px auto 15px auto;
+}
 
 
 #solutions > article.solution {
@@ -542,6 +549,11 @@ div.quote {
     font-size: 14px;
 }
 
+.logos > .company.col-3, .logos > .company.col-2 {
+    overflow: hidden;
+    line-height: 85px;
+}
+
 .logos > .company.col-3 {
     width: 31.2%;
     float: left;
@@ -554,6 +566,9 @@ div.quote {
     background: white;
 }
 
+.company {
+    text-align: center;
+}
 
 
 .column > * {
@@ -943,7 +958,7 @@ footer.main.main > section.copyright > *{
     }
 
     #main-content > section:nth-child(4) .column {
-        width: 98%;
+        width: 80%;
         margin: auto;
         display: block;
     }
